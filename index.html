@@ -1,0 +1,143 @@
+<!doctype>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flex</title>
+</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+/*			border: 1px solid red;*/
+			margin: 5px;
+			font-family: arial, sans-serif;
+			
+
+		}
+		#logo{
+			border: 1px solid black;
+			border-radius: 50%;
+			background-image: url('imagem.jpg');
+			background-size: cover;
+
+		}
+		#divp{
+			display: flex;
+			height: 100%;
+
+
+		}
+		#menutop{
+			height: 6%;
+/*			border: 1px dashed green;*/
+			display: flex;
+			justify-content: space-between;
+			margin: 2px;
+			background-image: linear-gradient(to right, #ADD8E6,#A9A9A9);
+		}
+		#menulateral{
+			width: 20%;
+/*			border: 1px solid blue;*/
+			height: 100%;
+/*			background-image: linear-gradient(to right,#808080,#FFC0CB,#98FB98);*/
+			margin-left: 2px;
+			margin-bottom: 7px;
+			background-color:#ADD8E6;
+			margin-top: 2px;
+		}
+		.menu-elemento{
+			width: 100%;
+		}
+
+		div{
+			margin: 0px;
+		}
+		
+		#divisao1{
+			display: flex;
+			width: 80%;
+			padding: 6px;
+			height: 100% ;
+			flex-direction: column;
+			margin: 0px;
+			/*			border: 1px solid brown;*/
+			/*background-image: url('imagem.jpg');*/
+		}
+		#divisao2{
+			display: flex;
+			height: 100%;
+			width: 100%;
+			padding: 10px;
+			justify-content: space-between;
+			margin: 10px;
+			
+
+
+		}
+		.div3{
+			width: 50%;
+/*			border-radius: 0px;*/
+			border: 1px solid gray;
+			padding: 0;
+			margin: 2px;
+/*			background-image: linear-gradient(to bottom, #ffcccc,#d9d9d9,#b366ff);*/
+/*			background-color: #A9A9A9;*/
+			background-color: pink;
+			transition: transform 0.2s ease-in-out;
+
+		}
+		.div3:hover{
+			transform: scale(1.05);
+			cursor: pointer;	
+		}
+		img{
+			height: 100%;
+			width: 100%;
+		}
+		#usuario{
+			border: 1px solid black;
+		}
+
+	</style>
+
+<body>
+	<nav id="menutop">
+		<div id="logo"></div>
+		<div id="usuario">Lourenco Jaime</div>
+	</nav>
+	<div id="divp">
+		<div id="menulateral">
+			<div class="menu-elemento">Dashboard</div>
+			<div class="menu-elemento">Aluno</div>
+			<div class="menu-elemento">Professor</div>
+			<div class="menu-elemento">Mensalidades</div>
+			<div class="menu-elemento">Encarregado</div>
+			<div class="menu-elemento">Turma</div>
+		</div>
+		<div id="divisao1" >
+
+			<div id="divisao2">
+				<div class="div3">Aluno</div>
+				<div class="div3">Professor</div>
+				<div class="div3">Financas</div>
+				<div class="div3">Escolinha</div>
+			</div>
+
+			<div id="divisao2">
+				<div class="div3">Estatistica Ensino Primario</div>
+				<div class="div3">Estatistica Ensino Secundario</div>
+			</div>
+		
+		</div>
+	</div>
+
+
+
+</body>
+</html>
